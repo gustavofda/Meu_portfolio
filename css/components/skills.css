@@ -1,3 +1,24 @@
+.skills {
+background-color: var(--light-tertiary-color);
+  scroll-margin-top: 15rem;
+}
+
+.skills .skills__content {
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.skills .skills__content .description {
+  max-width: 56rem;
+  margin: 0 auto 6rem;
+}
+
+.skills .skills__content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
 .skills .skills__content ul li .image-container {
   background-color: var(--white);
   padding: 2rem;
@@ -9,22 +30,10 @@
   align-items: center;
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  position: relative; /* Para fazer a borda lateral */
 }
 
-.skills .skills__content ul li .image-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -5px; /* Ajuste o valor para a espessura da borda lateral */
-  right: -5px;
-  border-left: 5px solid var(--primary-color); /* Cor da borda esquerda */
-  border-right: 5px solid var(--primary-color); /* Cor da borda direita */
-  transition: all 0.3s ease; /* Animação suave */
-}
-
-.skills .skills__content ul li .image-container:hover::before {
-  border-left-color: var(--secondary-color); /* Cor da borda ao passar o mouse */
-  border-right-color: var(--secondary-color);
+.skills .skills__content ul li h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
 }
