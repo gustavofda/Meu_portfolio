@@ -1,270 +1,331 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
-    <title>GustavoA Portfólio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/extends.css" />
+  <title>GustavoA Portfólio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="navbar__content max-width mb-0">
-        <a href="/">
-          <h1 id="Logo">Gustavo Araujo</h1>
-        </a>
-        <ul class="navbar__links">
+  <link rel="stylesheet" href="css/extends.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar__content max-width mb-0">
+      <a href="/">
+        <h1 id="Logo">Gustavo Araujo</h1>
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#header">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#footer">Contato</a></li>
+      </ul>
+      <div class="navbar__mobile">
+        <img src="assets/svg/menu.svg" alt="menu" class="burguer" />
+        <ul class="mobile__links">
           <li><a href="#header">Início</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#footer">Contato</a></li>
         </ul>
-        <div class="navbar__mobile">
-          <img src="assets/svg/menu.svg" alt="menu" class="burguer" />
-          <ul class="mobile__links">
-            <li><a href="#header">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#footer">Contato</a></li>
-          </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header" class="max-width">
+    <div class="header__left">
+      <h1>Olá! Me chamo Gustavo e sou Desenvolvedor Front-End</h1>
+      <p>
+        Desenvolvedor FrontEnd com experiência
+        intermediária nas tecnologias JavaScript, TypeScript, Node e React.
+        Sou estudante de Análise e Desenvolvimento de Sistemas pela Universidade Nove de Julho.
+        Além disso, sou apaixonado por criar soluções tecnológicas que resolvem
+        problemas reais e que agregam valor aos usuários.
+      </p>
+      <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+    </div>
+    <div class="header__right">
+      <div class="header__image">
+        <img src="assets/GuAraujo.jpg" alt="Gustavo Araujo" class="Gustavo" />
+        <img src="assets/svg/abstract.svg" alt="background" class="background" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section id="about" class="about max-width">
+    <div class="about__left">
+      <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+      <p>
+        Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
+        meu trabalho?
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/gustavo.fda/" target="_blank" rel="external"><img
+              src="assets/svg/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/gustavofda/" target="_blank" rel="external"><img
+              src="assets/svg/linkedin.svg" alt="Linkedin" target="_blank" rel="external" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/gustavofda" target="_blank" rel="external"><img src="assets/svg/github.svg"
+              alt="Facebook" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="about__right">
+      <h3 class="tertiary-title mb-m">
+        Desenvolvedor Front-End apaixonado por tecnologia e soluções criativas
+      </h3>
+      <p>
+        Olá, eu sou Gustavo Araujo, sou um Desenvolvedor web com foco em front-End. Minha jornada no universo da
+        tecnologia me levou a adquirir experiência intermediária nas linguagens JavaScript, TypeScript, Node e React. Ao
+        longo do tempo, mergulhei nos estudos e projetos para aprimorar minhas habilidades, e me destacar no cenário de
+        desenvolvimento web. Atualmente estou cursando a faculdade de Análise e Desenvolvimento de Sistemas pela
+        Universidade Nove de Julho.
+      </p>
+      <p>
+        Eu amo o desafio de encontrar soluções inovadoras e criativas para
+        problemas complexos e estou sempre buscando aprender e crescer como
+        profissional.
+      </p>
+    </div>
+  </section>
+
+  <!-- habilidades -->
+  <section id="skills" class="skills">
+    <div class="skills__content max-width">
+      <h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
+      <p class="description">
+        Descubra as habilidades e ferramentas que domino e que me permitem
+        criar soluções criativas e funcionais para meus clientes.
+      </p>
+      <ul>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/notebook.png" alt="Desenvolvimento Web" />
+          </div>
+          <h3>Desenvolvimento Web</h3>
+          <p>
+            Experiência em desenvolvimento Front-End com foco em tecnologias
+            modernas.
+          </p>
+        </li>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/colors.png" alt="Web Design" />
+          </div>
+          <h3>Web Design</h3>
+          <p>
+            Habilidade em criar layouts modernos e responsivos, com foco na experiência do usuário.
+          </p>
+        </li>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/phone.png" alt="UX/UI Design" />
+          </div>
+          <h3>React</h3>
+          <p>
+            Desenvolvimento de interfaces dinâmicas e interativas utilizando React.
+          </p>
+        </li>
+        <li class="skills__item">
+          <div class="image-container">
+            <img src="assets/files.png" alt="Gerenciamentos de versões" />
+          </div>
+          <h3>Banco de Dados</h3>
+          <p>
+            Conhecimento em ferramentas de gerenciamento de banco de dados, como MongoDB e SQL.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="projects max-width">
+    <div class="projects__content">
+      <h2 class="secondary-title">Projetos em Destaque</h2>
+      <p>
+        Aqui, você terá a oportunidade de explorar e conhecer de perto os projetos nos quais tenho dedicado meu tempo e
+        minhas habilidades.
+      </p>
+    </div>
+    <ul>
+      <li>
+        <div class="image">
+          <img src="assets/projects/task-manager.png" alt="pókedex" />
         </div>
-      </div>
-    </nav>
-
-    <header id="header" class="max-width">
-      <div class="header__left">
-        <h1>Olá! Me chamo Gustavo e sou Desenvolvedor Front-End</h1>
-        <p>
-          Desenvolvedor FrontEnd com experiência 
-          intermediária nas tecnologias JavaScript, TypeScript, Node e React. 
-          Sou estudante de Análise e Desenvolvimento de Sistemas pela Universidade Nove de Julho. 
-          Além disso, sou apaixonado por criar soluções tecnológicas que resolvem 
-          problemas reais e que agregam valor aos usuários.
-        </p>
-        <a href="#about" class="btn btn-primary">Saiba Mais!</a>
-      </div>
-      <div class="header__right">
-        <div class="header__image">
-          <img src="assets/GuAraujo.jpg" alt="Gustavo Araujo" class="Gustavo" />
-          <img src="assets/svg/abstract.svg" alt="background" class="background" />
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Pókedex - Inciclopédia de Pokémon
+          </h3>
+          <p>
+            Como ele funciona? Ele utiliza a PokeAPI para buscar informações de um Pokémon e exibi-las em uma página
+            HTML. O código começa selecionando os elementos HTML relevantes, como o nome do Pokémon, o número do Pokémon
+            e a imagem do Pokémon.
+          </p>
+          <a href="https://www.linkedin.com/posts/activity-7069733982472478720-eUB9?utm_source=share&utm_medium=member_desktop"
+            target="_blank" rel="external">Leia mais &rarr;</a>
         </div>
-      </div>
-    </header>
-
-    <!-- Sobre -->
-    <section id="about" class="about max-width">
-      <div class="about__left">
-        <h2 class="secondary-title">Além do código: quem sou eu?</h2>
-        <p>
-          Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
-          meu trabalho?
-        </p>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/gustavo.fda/" target="_blank" rel="external"><img src="assets/svg/instagram.svg" alt="Instagram" /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gustavofda/" target="_blank" rel="external"><img src="assets/svg/linkedin.svg" alt="Linkedin" target="_blank" rel="external" /></a>
-          </li>
-          <li>
-            <a href="https://github.com/gustavofda" target="_blank" rel="external"><img src="assets/svg/github.svg" alt="Facebook" /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="about__right">
-        <h3 class="tertiary-title mb-m">
-          Desenvolvedor Front-End apaixonado por tecnologia e soluções criativas
-        </h3>
-        <p>
-          Olá, eu sou Gustavo Araujo, sou um Desenvolvedor web com foco em front-End. Minha jornada no universo da tecnologia me levou a adquirir experiência intermediária nas linguagens JavaScript, TypeScript, Node e React. Ao longo do tempo, mergulhei nos estudos e projetos para aprimorar minhas habilidades, e me destacar no cenário de desenvolvimento web. Atualmente estou cursando a faculdade de Análise e Desenvolvimento de Sistemas pela Universidade Nove de Julho.
-        </p>
-        <p>
-          Eu amo o desafio de encontrar soluções inovadoras e criativas para
-          problemas complexos e estou sempre buscando aprender e crescer como
-          profissional.
-        </p>
-      </div>
-    </section>
-
-    <!-- habilidades -->
-    <section id="skills" class="skills">
-      <div class="skills__content max-width">
-        <h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
-        <p class="description">
-          Descubra as habilidades e ferramentas que domino e que me permitem
-          criar soluções criativas e funcionais para meus clientes.
-        </p>
-        <ul>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/notebook.png" alt="Desenvolvimento Web" />
-            </div>
-            <h3>Desenvolvimento Web</h3>
-            <p>
-              Experiência em desenvolvimento Front-End com foco em tecnologias
-              modernas.
-            </p>
-          </li>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/colors.png" alt="Web Design" />
-            </div>
-            <h3>Web Design</h3>
-            <p>
-             Habilidade em criar layouts modernos e responsivos, com foco na experiência do usuário.
-            </p>
-          </li>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/phone.png" alt="UX/UI Design" />
-            </div>
-            <h3>React</h3>
-            <p>
-              Desenvolvimento de interfaces dinâmicas e interativas utilizando React. 
-            </p>
-          </li>
-          <li class="skills__item">
-            <div class="image-container">
-              <img src="assets/files.png" alt="Gerenciamentos de versões" />
-            </div>
-            <h3>Banco de Dados</h3>
-            <p>
-              Conhecimento em ferramentas de gerenciamento de banco de dados, como MongoDB e SQL.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-   <!-- Projetos -->
-<section id="projects" class="projects max-width">
-  <div class="projects__content">
-    <h2 class="secondary-title">Projetos em Destaque</h2>
-    <p>
-      Aqui, você terá a oportunidade de explorar e conhecer de perto os projetos nos quais tenho dedicado meu tempo e minhas habilidades.
-    </p>
-  </div>
-  <ul>
-    <li>
-      <div class="image">
-        <img src="assets/projects/task-manager.png" alt="pókedex" />
-      </div>
-      <div class="projects__info">
-        <h3 class="tertiary-title">
-          Pókedex - Inciclopédia de Pokémon
-        </h3>
-        <p>
-          Como ele funciona? Ele utiliza a PokeAPI para buscar informações de um Pokémon e exibi-las em uma página HTML. O código começa selecionando os elementos HTML relevantes, como o nome do Pokémon, o número do Pokémon e a imagem do Pokémon.
-        </p>
-        <a href="https://www.linkedin.com/posts/activity-7069733982472478720-eUB9?utm_source=share&utm_medium=member_desktop" target="_blank" rel="external">Leia mais &rarr;</a>
-      </div>
-    </li>
-    <!-- Projeto 2 -->
-    <li class="projects__reversed-list">
-      <div class="image">
-        <img src="assets/projects/landingpage.png" alt="landingpage" />
-      </div>
-      <div class="projects__info">
-        <h3 class="tertiary-title">
-          Landing Page: One Piece Film: Red
-        </h3>
-        <p>
-          Landing Page de divulgação do filme One Piece Film: Red, interativo e responsivo! O JS usado aqui é bem simples, ele está associado a um modal que exibe um vídeo quando o botão é clicado e o fecha quando outro botão é clicado.
-        </p>
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7173789712636088320/" target="_blank" rel="external">Leia mais &rarr;</a>
-      </div>
-    </li>
-    <!-- Projeto 3 -->
-    <li>
-      <div class="image">
-        <img src="assets/projects/project3.png" alt="The Last Us" />
-      </div>
-      <div class="projects__info">
-        <h3 class="tertiary-title">
-          Carrossel de imagens: The Last Us
-        </h3>
-        <p>
-          Carrossel de imagens com proposta de divulgação da série: The Last Of Us. O JS aqui é responsável por criar um carrossel de imagens com botões de navegação. Ele se seleciona todos os elementos com a classe, e em seguida ele itera sobre os botões e adiciona um ouvinte de eventos de clique a cada um.
-        </p>
-        <a href="https://www.linkedin.com/in/gustavofda/recent-activity/all/" target="_blank" rel="external">Leia mais &rarr;</a>
-      </div>
-    </li>
-    <!-- Projeto 4 -->
-    <li class="projects__reversed-list">
-      <div class="image">
-        <img src="assets/projects/project4.png" alt="Travis Scott Utopia" />
-      </div>
-      <div class="projects__info">
-        <h3 class="tertiary-title">
-          Travis Scott: Utopia
-        </h3>
-        <p>
-          Este projeto é uma landing page dedicada ao álbum "Utopia" do rapper Travis Scott. A página inclui uma seção animada de boas-vindas, um reprodutor de música integrado e um navbar com links relevantes. O objetivo é criar uma página visualmente atraente e funcional para promover o álbum e a turnê do artista.
-        </p>
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7221753551704735744/" target="_blank" rel="external">Leia mais &rarr;</a>
-      </div>
-    </li>
-    <!-- Projeto 5 -->
-    <li>
-      <div class="image">
-        <img src="assets/projects/project5.png" alt="App-Controle-de-Metas" />
-      </div>
-      <div class="projects__info">
-        <h3 class="tertiary-title">
-          App: Controle de Metas
-        </h3>
-        <p>
-          App de Controle de Metas usando TypeScript, React, e Node.js. O frontend permite criar metas com frequência semanal selecionada por meio de um formulário. O usuário escolhe a frequência semanal desejada com botões de seleção. Ao enviar, o app faz uma requisição POST para a API, criando a meta no backend. As metas criadas são exibidas em uma lista de pendências, onde o usuário pode marcar como concluídas, atualizando automaticamente o progresso exibidos.
-        </p>
-        <a href="https://github.com/gustavofda/App-Controle-de-Metas" target="_blank" rel="external">Leia mais &rarr;</a>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer__content max-width mb-0">
-        <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
-        <p class="mb-m">
-          Ficarei feliz em saber mais sobre seus projetos e como podemos
-          trabalhar juntos para torná-los realidade.
-        </p>
-        <div class="footer__contact mb-m">
-          <span class="mb-m">gustavoaraujo2017fise@email.com</span>
-          <span>11 98249 1593</span>
+      </li>
+      <!-- Projeto 2 -->
+      <li class="projects__reversed-list">
+        <div class="image">
+          <img src="assets/projects/landingpage.png" alt="landingpage" />
         </div>
-        <ul class="mb-l">
-          <li>
-            <a href="https://www.instagram.com/gustavo.fda/"><img src="assets/svg/instagram.svg" alt="Instagram" /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gustavofda/"><img src="assets/svg/linkedin.svg" alt="Linkedin" /></a>
-          </li>
-          <li>
-            <a href="https://github.com/gustavofda"><img src="assets/svg/github.svg" alt="Github" /></a>
-          </li>
-        </ul>
-        <p class="footer__copyright">
-          © 2024 Gustavo Araujo. Todos os direitos reservados.
-        </p>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Landing Page: One Piece Film: Red
+          </h3>
+          <p>
+            Landing Page de divulgação do filme One Piece Film: Red, interativo e responsivo! O JS usado aqui é bem
+            simples, ele está associado a um modal que exibe um vídeo quando o botão é clicado e o fecha quando outro
+            botão é clicado.
+          </p>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7173789712636088320/" target="_blank"
+            rel="external">Leia mais &rarr;</a>
+        </div>
+      </li>
+      <!-- Projeto 3 -->
+      <li>
+        <div class="image">
+          <img src="assets/projects/project3.png" alt="The Last Us" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Carrossel de imagens: The Last Us
+          </h3>
+          <p>
+            Carrossel de imagens com proposta de divulgação da série: The Last Of Us. O JS aqui é responsável por criar
+            um carrossel de imagens com botões de navegação. Ele se seleciona todos os elementos com a classe, e em
+            seguida ele itera sobre os botões e adiciona um ouvinte de eventos de clique a cada um.
+          </p>
+          <a href="https://www.linkedin.com/in/gustavofda/recent-activity/all/" target="_blank" rel="external">Leia mais
+            &rarr;</a>
+        </div>
+      </li>
+      <!-- Projeto 4 -->
+      <li class="projects__reversed-list">
+        <div class="image">
+          <img src="assets/projects/project4.png" alt="Travis Scott Utopia" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Travis Scott: Utopia
+          </h3>
+          <p>
+            Este projeto é uma landing page dedicada ao álbum "Utopia" do rapper Travis Scott. A página inclui uma seção
+            animada de boas-vindas, um reprodutor de música integrado e um navbar com links relevantes. O objetivo é
+            criar uma página visualmente atraente e funcional para promover o álbum e a turnê do artista.
+          </p>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7221753551704735744/" target="_blank"
+            rel="external">Leia mais &rarr;</a>
+        </div>
+      </li>
+      <!-- Projeto 5 -->
+      <li>
+        <div class="image">
+          <img src="assets/projects/project5.png" alt="App-Controle-de-Metas" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            App: Controle de Metas
+          </h3>
+          <p>
+            App de Controle de Metas usando TypeScript, React, e Node.js. O frontend permite criar metas com frequência
+            semanal selecionada por meio de um formulário. O usuário escolhe a frequência semanal desejada com botões de
+            seleção. Ao enviar, o app faz uma requisição POST para a API, criando a meta no backend. As metas criadas
+            são exibidas em uma lista de pendências, onde o usuário pode marcar como concluídas, atualizando
+            automaticamente o progresso exibidos.
+          </p>
+          <a href="https://github.com/gustavofda/App-Controle-de-Metas" target="_blank" rel="external">Leia mais
+            &rarr;</a>
+        </div>
+      </li>
+      <!-- Projeto 6 -->
+      <li class="projects__reversed-list">
+        <div class="image">
+          <img src="assets/projects/project6.png" alt="Extenção para baixar músicas" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Extenção: BeatSaver
+          </h3>
+          <p>
+            BeatSaver é uma extensão de navegador para baixar músicas do YouTube. Permite colar o link de uma música e
+            baixar o áudio diretamente no computador. Desenvolvida com HTML, CSS e JavaScript, oferece uma interface
+            simples e prática para obter músicas em MP4, usando integração com Node.js para processar downloads.
+          </p>
+          <a href="https://github.com/gustavofda/Extension-music-download" target="_blank" rel="external">Leia mais
+            &rarr;</a>
+        </div>
+      </li>
+      <!-- Projeto 7 -->
+      <li>
+        <div class="image">
+          <img src="assets/projects/project7.png" alt="App-Controle-de-Metas" />
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            App: Minha Checklist
+          </h3>
+          <p>
+            Este aplicativo de checklist, desenvolvido com JavaScript, HTML e CSS, é uma ferramenta simples e prática
+            para organizar suas tarefas diárias. Com uma interface intuitiva, permite adicionar, remover e salvar itens
+            facilmente, ajudando você a se manter focado e produtivo em qualquer dispositivo.
+          </p>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7258858243421028352/" target="_blank"
+            rel="external">Leia mais &rarr;</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer__content max-width mb-0">
+      <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+      <p class="mb-m">
+        Ficarei feliz em saber mais sobre seus projetos e como podemos
+        trabalhar juntos para torná-los realidade.
+      </p>
+      <div class="footer__contact mb-m">
+        <span class="mb-m">gustavoaraujo2017fise@email.com</span>
+        <span>11 98249 1593</span>
       </div>
-    </footer>
-    <!-- script -->
-    <script src="scripts/index.js"></script>
-  </body>
+      <ul class="mb-l">
+        <li>
+          <a href="https://www.instagram.com/gustavo.fda/"><img src="assets/svg/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/gustavofda/"><img src="assets/svg/linkedin.svg" alt="Linkedin" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/gustavofda"><img src="assets/svg/github.svg" alt="Github" /></a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © 2024 Gustavo Araujo. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- script -->
+  <script src="scripts/index.js"></script>
+</body>
+
 </html>
