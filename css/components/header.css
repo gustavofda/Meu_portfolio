@@ -57,4 +57,11 @@ header .header__right .header__image .background {
   header .header__left p {
     margin: 2rem auto 4rem;
   }
+
+  header .header__right .header__image .gustavo {
+    max-width: 80%; /* Ajuste o tamanho da imagem para telas menores */
+    min-width: auto; /* Remove largura mínima, se necessário */
+    height: auto; /* Garante que a proporção seja mantida */
+  }
 }
+
